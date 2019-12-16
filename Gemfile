@@ -4,6 +4,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 
+gem 'simple_form'
+
+gem 'rubyzip', '= 1.0.0'
+gem 'axlsx', '= 2.0.1'
+gem 'axlsx_rails'
+gem 'country_select'
 
 gem 'bootstrap', '~> 4.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
+  resources :users
   get 'pages/amoave'
   get 'pages/comunidade'
   get 'pages/estudantes'
