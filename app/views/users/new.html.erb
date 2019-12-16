@@ -1,14 +1,19 @@
 
-<div class="container">
+<div class="container mx-px-5">
   <!-- <form id="contact" action=""> -->
-    <div class="row row justify-content-center">
-      <div class="col-12 col-lg-6">
-        <h3 class="text-success"><b>REGISTO</b></h3>
-
-        <div class="arg d-flex justify-content-center">
-          <h4>Este questionário muamua mua mua mua mua bla bla bla </h4>
-        </div>
-      <fieldset>
+    <div class="registo d-flex justify-content-center">
+      <h3 class="text-success"><b>REGISTO</b></h3>
+    </div>
+    <div class="arg d-flex justify-content-center">
+      <p class="text-justify">A amoave é uma associação que visa garantir a coesão dos moçambicanos em Aveiro; facilitar a integração e promover o acompanhamento de Moçambicanos Recém-chegados a Aveiro; garantir a promoção de Moçambique em Aveiro e Portugal; entre outros.
+      <br>
+      Por um Moçambique mais unido e forte.
+      <br>
+      <b>Atenção:</b> Os seus dados não serão usados ou partilhados sem a sua autorização.
+      <br>
+        Partilhe o link desse formulário a outros Moçambicanos.  </p>
+    </div>
+    <fieldset>
 
           <%= simple_form_for @user  do |f| %>
             <%= f.input :name, label: 'Nome Completo'%>
@@ -35,8 +40,8 @@
             <%= f.input :comentary, label: 'Comentários em Relação ao Site/AMOAVE' %>
 
           <div class="row justify-content-center">
-            <div class="form-actions col-xs-12 col-sm-4 col-sm-offset-4">
-            <%= f.button :submit, "Registar", class: 'btn btn-success' %>
+            <div class="form-actions col-xs-12 col-sm-4 col-sm-offset-4 my-5">
+            <%= f.button :submit, "Registar", class: 'btn btn-primary btn-lg btn-block' %>
             </div>
           </div>
 
@@ -44,5 +49,67 @@
 
     </fieldset>
   </form>
-  </div>
 </div>
+
+
+<br>
+<br>
+
+<footer class="ftco-footer ftco-section bg-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">AMOAVE.</h2>
+          <p>Associação dos Moçambicanos
+Residentes em Aveiro</p>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+            <li class="ftco-animate"><a href="https://twitter.com"><span class="fab fa-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.instagram.com"><span class="fab fa-instagram"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4 ml-md-5">
+          <h2 class="ftco-heading-2">Informacao</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="py-2 d-block">Empregos</a></li>
+            <li><a href="#" class="py-2 d-block">Bolsas de Estudos</a></li>
+            <li><a href="#" class="py-2 d-block">Oportunidades de Estágios</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+         <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="py-2 d-block">Estudantes</a></li>
+            <li><a href="#" class="py-2 d-block">Comunidade</a></li>
+            <li><a href="#" class="py-2 d-block">Contactos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Alguma Questão?</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li><span class="icon icon-map-marker"></span><span class="text">Aveiro, Portugal</span></li>
+              <li><a href="#"><span class="icon icon-phone"></span><span class="text">+351 932281760</span></a></li>
+              <li><a href="#"><span class="icon icon-envelope"></span><span class="text">amoave.direcao@yahoo.com</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+
+        <p>
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | AMOAVE <i class="fa fa-heart color-danger" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank"></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
