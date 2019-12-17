@@ -50,7 +50,9 @@
             <li class="nav-item"><a href="about.html" class="nav-link">AMOAVE</a></li>
             <li class="nav-item"><a href="causes.html" class="nav-link">COMUNIDADE</a></li>
             <li class="nav-item"><a href="blog.html" class="nav-link">ESTUDANTES</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">CONTACTO</a></li>
+            <li class="nav-item contacto">
+              <%= link_to pages_contacto_path, :action => 'go' do %><a href="pages/contacto">CONTACTO</a></li>
+              <% end %>
           </ul>
         </div>
       </div>
