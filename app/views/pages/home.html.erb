@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 
     <link rel="stylesheet" href="css/aos.css">
 
@@ -26,6 +27,10 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+
   </head>
   <body>
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -36,7 +41,7 @@
             '/' %>
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> MENU
+          <span class="dropdown-menu"></span> MENU
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
@@ -73,7 +78,9 @@
                 <div class="text py-5 pl-md-4 pr-md-3">
                   <h2 class="mb-4 text-white">Moçambicano em Aveiro?</h2>
                   <p>Estavamos a tua espera. Registe-se na plataforma dos moçambicanos em aveiro e ficas na nossa rede de contactos...</p>
-                  <p></p> <%= link_to new_user_path%> <a href="users/new" class="btn btn-primary py-3 px-4">Inscreva-se já!</a>
+                  <p>
+                    <%= link_to new_user_path, :action => 'go' do %><a href="users/new" class="btn btn-primary py-3 px-4">Inscreva-se já!</a></p>
+                    <%end%>
                 </div>
               </div>
             </div>
@@ -130,7 +137,7 @@ com os seus membros.</p>
     </section>
 
 
-        <footer class="ftco-footer ftco-section bg-info">
+        <footer class="ftco-footer ftco-section bg-info text-info">
           <div class="container">
             <div class="row">
               <div class="col-md">
@@ -182,7 +189,7 @@ com os seus membros.</p>
               <div class="col-md-12 text-center">
 
                 <p>
-                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | AMOAVE <i class="fa fa-heart color-danger" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank"></a>
+                  Copyright ©2019 All rights reserved | AMOAVE <i class="fas fa-heart" style="color:#BC1421"></i>
                 </p>
               </div>
             </div>
