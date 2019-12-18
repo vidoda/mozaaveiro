@@ -8153,7 +8153,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #ffb400; }
+  color: white; }
   a:hover, a:focus {
     text-decoration: none;
     color: #ffb400;
@@ -8170,8 +8170,8 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light {
   background: #0879EB !important;
-  position: absolute;
-  top: 20px;
+  position: sticky;
+  top: 0px;
   left: 0;
   right: 0;
   z-index: 3;
@@ -8628,8 +8628,8 @@ textarea.form-control {
       padding-bottom: 5em; } }
 
 .ftco-animate {
-  opacity: 0;
-  visibility: hidden; }
+  // opacity: 0;
+  visibility: inherit; }
 
 .bg-primary {
   background: #ffb400 !important; }
@@ -9530,3 +9530,32 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+
+
+.animacao {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
