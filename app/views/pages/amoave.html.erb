@@ -28,23 +28,30 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Aid<span>.</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
+        <div class="container">
+          <a class="navbar-brand" href="pages/home">
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item active"><a href="about.html" class="nav-link">Who we are</a></li>
-            <li class="nav-item"><a href="causes.html" class="nav-link">Causes</a></li>
-            <li class="nav-item"><a href="blog.html" class="nav-link">Stories</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+          <%= link_to image_tag("logo.png", width: "40%", alt: "logo"),
+          '/' %>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+          </button>
+
+
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><%= link_to "HOME", root_path, class: 'nav-link'%> </li>
+                <li class="nav-item"><%= link_to "AMOAVE", pages_amoave_path, class: 'nav-link'%> </li>
+                <!-- <li class="nav-item" <%= link_to pages_amoave_path%> ><a href="pages/amoave" class="nav-link">AMOAVE</a></li> -->
+                <li class="nav-item"><a href="causes.html" class="nav-link">COMUNIDADE</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">ESTUDANTES</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">CONTACTO</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
@@ -52,8 +59,8 @@
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
-            <h2 class="mb-3 bread">About Us</h2>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
+            <h2 class="mb-3 bread">Sobre Nós</h2>
+            <p class="breadcrumbs"><span class="mr-2"><a href="pages/home">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Sobre Nos <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
@@ -70,11 +77,10 @@
             <div class="py-md-5">
               <div class="row justify-content-start pb-3">
                 <div class="col-md-12 heading-section ftco-animate">
-                  <span class="subheading">A Few Words About Us</span>
-                  <h2 class="mb-4">We Voluntary Help for Almost <span class="number" data-number="100">0</span> Years</h2>
-                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                  <span class="subheading">Poucas Palávras sobre nós</span>
+                  <h2 class="mb-4">Nós Somos AMOAVE <i class="fas fa-heart" style="color:#BC1421"></i> </h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
               </div>
             </div>
@@ -131,14 +137,14 @@
         <div class="row">
           <div class="col-md-4 py-4 py-md-5 ftco-animate">
             <div class="py-md-4 pb-md-5">
-              <h3>Mission: To Change the Life of Those, Who Have no Hope!</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
           <div class="col-md-4 py-4 py-md-5 ftco-animate">
             <div class="py-md-4 pb-md-5">
-              <h3>Vission</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <h3>Loren Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
           <div class="col-md-4 py-4 py-md-5 img" style="background-image: url(images/bg_1.jpg)"></div>
@@ -154,19 +160,34 @@
           </div>
           <div class="col-md-6 py-5">
             <div class="heading-section heading-section-white pt-4 ftco-animate">
-              <h2 class="mb-0">Success Stories</h2>
+              <h2 class="mb-0">Histórias de sucesso</h2>
             </div>
             <div class="carousel-testimony owl-carousel ftco-owl">
               <div class="item">
                 <div class="testimony-wrap pb-4">
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
                   <div class="d-flex">
                     <div class="user-img" style="background-image: url(images/person_1.jpg)">
                     </div>
                     <div class="pos ml-3">
-                      <p class="name">Jeff Nucci</p>
+                      <p class="name">Joao manuel</p>
+                      <span class="position">Eng. Química</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap pb-4">
+                  <div class="text">
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                  <div class="d-flex">
+                    <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                    </div>
+                    <div class="pos ml-3">
+                      <p class="name">Vicente</p>
                       <span class="position">Businessman</span>
                     </div>
                   </div>
@@ -175,13 +196,13 @@
               <div class="item">
                 <div class="testimony-wrap pb-4">
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                   </div>
                   <div class="d-flex">
                     <div class="user-img" style="background-image: url(images/person_1.jpg)">
                     </div>
                     <div class="pos ml-3">
-                      <p class="name">Jeff Nucci</p>
+                      <p class="name">dauce</p>
                       <span class="position">Businessman</span>
                     </div>
                   </div>
@@ -190,14 +211,14 @@
               <div class="item">
                 <div class="testimony-wrap pb-4">
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                   </div>
                   <div class="d-flex">
                     <div class="user-img" style="background-image: url(images/person_1.jpg)">
                     </div>
                     <div class="pos ml-3">
-                      <p class="name">Jeff Nucci</p>
-                      <span class="position">Businessman</span>
+                      <p class="name">Desconhecido</p>
+                      <span class="position">Estudante</span>
                     </div>
                   </div>
                 </div>
@@ -205,29 +226,14 @@
               <div class="item">
                 <div class="testimony-wrap pb-4">
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                   </div>
                   <div class="d-flex">
                     <div class="user-img" style="background-image: url(images/person_1.jpg)">
                     </div>
                     <div class="pos ml-3">
-                      <p class="name">Jeff Nucci</p>
-                      <span class="position">Businessman</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap pb-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="d-flex">
-                    <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                    </div>
-                    <div class="pos ml-3">
-                      <p class="name">Jeff Nucci</p>
-                      <span class="position">Businessman</span>
+                      <p class="name">Anonimato</p>
+                      <span class="position">Residente/span>
                     </div>
                   </div>
                 </div>
@@ -268,6 +274,7 @@
                  <div class="ftco-footer-widget mb-4">
                   <h2 class="ftco-heading-2">Links</h2>
                   <ul class="list-unstyled">
+                     <li class="nav-item"><%= link_to "AMOAVE", pages_amoave_path, class: 'nav-link'%> </li>
                     <li><a href="#" class="py-2 d-block">Estudantes</a></li>
                     <li><a href="#" class="py-2 d-block">Comunidade</a></li>
                     <li><a href="#" class="py-2 d-block">Contactos</a></li>
