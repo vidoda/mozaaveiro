@@ -1,38 +1,68 @@
 
 
-
 <h1>Pages#estudantes</h1>
 <p>Find me in app/views/pages/estudantes.html.erb</p>
 
 
-<div class="container">
-  <div class="card-product-profile">
-    <img src="http://res.cloudinary.com/veronicabraga/image/upload/v1568390553/thsjurxxmi0y9mfey3db.jpg" />
-      <div class="card_product_profile_infos">
-      <h2>PhD of ICT</h2>
-      <p>Application start: 2020-09-23</p>
-      <p>Deadline: 2020-11-22</p>
+<div class="row ">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="show-card">
+      <div class="content-background">
+
+        <div class="institution-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=cl_image_path @scholarship.institution.photo %>')">
+          <h1>The perfect scholarship for you</h1>
+        </div>
+
+        <%#= image_tag @scholarship.institution.photo_url %>
+
+        <div class="show-card-text">
+          <div class="infos-name star">
+            <h2><%= @scholarship.name %></h2>
+            <h3><%= @scholarship.institution.name %></h3>
+
+            <ul>
+              <li id="star-icon"><i class="fas fa-star"></i></li>
+              <li id="ranking-number"><%=@scholarship.institution.ranking%></li>
+              <li id="ranking-text">Ranking in Europe (THE)</li>
+            </ul>
+
+            <h4><%= @scholarship.institution.country %></h4>
+            <h4><%= @scholarship.area.name %></h4>
+
+            <div class="application">
+              <ul>
+                <li><i class="far fa-calendar-alt"></i></li>
+                <li>Application: <%= @scholarship.application_start_date %> / <%= @scholarship.application_end_date %></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="description">
+            <p><%= @scholarship.description %></p>
+          </div>
+
+          <div class="btn-info">
+          <%= link_to "More information", @scholarship.url, class: 'btn btn-warning', target: :_blank %>
+          </div>
+
+          <div id='<%= @scholarship.id %>' class="heart-icon" >
+            <% if user_signed_in? %>
+              <%= icon(current_user.likes?(@scholarship) ? "fas color-fas heart-fas" : "far color-far heart-fav" , "heart") %>
+            <% else %>
+             <%= link_to new_user_session_path, alert: "You need to Login to continue :)" do %>
+                <i class="far fa-heart color-far"></i>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
       </div>
 
-      <div class="icon" id="icon-trash-fav">
-        <a rel="nofollow" data-method="delete" href="/favorites/211">
-        <i class="fas fa-trash-alt"></i></a>
+      <div class="btn-back">
+        <%= link_to "Back to Scholarships", scholarships_path, class: 'btn btn-outline-warning'%>
       </div>
-        <a class="card-profile-link" href="/scholarships/413"></a>
     </div>
-
-  <div class="card-product-profile">
-    <img src="http://res.cloudinary.com/veronicabraga/image/upload/v1568390553/opu69attorpo8nzqh76w.jpg" />
-    <div class="card_product_profile_infos">
-      <h2>PhD of ICT</h2>
-      <p>Application start: 2021-02-25</p>
-      <p>Deadline: 2021-04-26</p>
-    </div>
-
-    <div class="icon" id="icon-trash-fav">
-      <a rel="nofollow" data-method="delete" href="/favorites/209">
-        <i class="fas fa-trash-alt"></i></a>
-      </div>
-    <a class="card-profile-link" href="/scholarships/401"></a>
   </div>
 </div>
+
+
+

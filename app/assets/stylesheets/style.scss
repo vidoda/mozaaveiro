@@ -491,7 +491,7 @@ pre {
   margin-left: 0; }
   .no-gutters > .col,
   .no-gutters > [class*="col-"] {
-    padding-right: 0;
+    padding-right: 200px;
     padding-left: 0; }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
@@ -1065,8 +1065,8 @@ pre {
   .col-lg-7 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 58.33333%;
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: -1 0 58.33333%;
+    max-width: 100.33333%; }
   .col-lg-8 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 66.66667%;
@@ -3829,12 +3829,12 @@ input[type="button"].btn-block {
   .card-header + .list-group .list-group-item:first-child {
     border-top: 0; }
 
-.card-footer {
-  padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125); }
-  .card-footer:last-child {
-    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
+// .card-footer {
+//   padding: 0.75rem 1.25rem;
+//   background-color: rgba(0, 0, 0, 0.03);
+//   border-top: 1px solid rgba(0, 0, 0, 0.125); }
+//   .card-footer:last-child {
+//     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
 
 .card-header-tabs {
   margin-right: -0.625rem;
@@ -10216,7 +10216,7 @@ textarea.form-control {
 }
 
   .row {
-  margin: 150px 6%;
+  margin: 20px 6%;
   margin-top: 0px;
 }
 
@@ -10250,7 +10250,7 @@ textarea.form-control {
 
   overflow: hidden;
   height: 90px;
-  width: 500px;
+  width: 100%px;
   background: #f2f2f2;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -10412,3 +10412,79 @@ textarea.form-control {
 // }
 
 
+.mission {
+  color: white;
+}
+
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+// .card-trip > img {
+//   height: 200px;
+//   width: 100%;
+//   object-fit: cover;
+// }
+
+// .card-trip h2 {
+//   font-size: 16px;
+//   font-weight: bold;
+//   margin: 0;
+// }
+
+// .card-trip p {
+//   font-size: 12px;
+//   opacity: .7;
+//   margin: 0;
+// }
+
+
+// .card-trip .card-trip-infos {
+//   padding: 16px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-end;
+//   position: relative;
+// }
+
+// .card-trip-infos .card-trip-user {
+//   position: absolute;
+//   right: 16px;
+//   top: -20px;
+//   width: 40px;
+// }
+
+.avatar-bordered {
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+  margin-left: 300px;
+  margin-top: 135px;
+}
+
+.card-trip-pricing {
+  margin-left: 270px;
+  margin-top: 0px;}
+
+.serra-estrela {
+margin-top: 50px;
+margin-left: -30px
+}
+
+.date-to-go {
+margin-top: -30px;
+margin-left: -40px
+}
+
+.text-serra {
+color: #32681E;
+}
+
+// .see-more {
+// padding-top: 100px;
+// margin-left: 100px;
+// }
