@@ -1,7 +1,28 @@
-<h1>Pages#comunidade</h1>
-<p>Find me in app/views/pages/comunidade.html.erb</p>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="home.html.erb">
 
-wdkajsdwfsklfjkgrejesefkjev
+          <%= link_to image_tag("logo.png", width: "40%", alt: "logo"),
+          '/' %>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+          </button>
+
+
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><%= link_to "HOME", root_path, class: 'nav-link'%> </li>
+
+                <li class="nav-item"><%= link_to "AMOAVE", pages_amoave_path, class: 'nav-link'%> </li>
+                <li class="nav-item"><%= link_to "COMUNIDADE", pages_comunidade_path, class: 'nav-link'%> </li>
+                <li class="nav-item"><%= link_to "ESTUDANTES", pages_estudantes_path, class: 'nav-link'%> </li>
+                <li class="nav-item"><%= link_to "CONTACTO", pages_contacto_path, class: 'nav-link'%> </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
 <div class="row ">
   <div class="col-sm-12 col-md-12 col-lg-12">

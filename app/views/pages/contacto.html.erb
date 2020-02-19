@@ -1,95 +1,136 @@
 
-  <div class="container-contact100">
-    <div class="wrap-contact100">
-      <form class="contact100-form validate-form">
-        <span class="contact100-form-title">
-          Envia nos uma mensagem
-        </span>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="home.html.erb">
 
-        <label class="label-input100" for="first-name">Diz-nos o seu nome*</label>
-        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-          <input id="first-name" class="input100" type="text" name="first-name" placeholder="Primeiro Nome">
-          <span class="focus-input100"></span>
-        </div>
-        <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-          <input class="input100" type="text" name="last-name" placeholder="Apelido">
-          <span class="focus-input100"></span>
-        </div>
-
-        <label class="label-input100" for="email">O seu email *</label>
-        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-          <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
-          <span class="focus-input100"></span>
-        </div>
-
-        <label class="label-input100" for="phone">Seu número de telemóvel</label>
-        <div class="wrap-input100">
-          <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +351 935 935 935">
-          <span class="focus-input100"></span>
-        </div>
-
-        <label class="label-input100" for="message">Message *</label>
-        <div class="wrap-input100 validate-input" data-validate = "Message is required">
-          <textarea id="message" class="input100" name="message" placeholder="Escreva-nos uma mensagem"></textarea>
-          <span class="focus-input100"></span>
-        </div>
-
-        <div class="container-contact100-form-btn">
-          <button class="contact100-form-btn">
-            Enviar Mensagem
+          <%= link_to image_tag("logo.png", width: "40%", alt: "logo"),
+          '/' %>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
           </button>
-        </div>
-      </form>
 
-      <div class="contact100-more flex-col-c-m" style="background-image: url(<%= asset_path 'hand.jpeg' %>);">
 
-        <div class="flex-w size1 p-b-47">
-          <div class="txt1 p-r-25">
-            <span class="lnr lnr-map-marker"></span>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><%= link_to "HOME", root_path, class: 'nav-link'%> </li>
+
+                <li class="nav-item"><%= link_to "AMOAVE", pages_amoave_path, class: 'nav-link'%> </li>
+                <li class="nav-item"><%= link_to "COMUNIDADE", pages_comunidade_path, class: 'nav-link'%> </li>
+                <li class="nav-item"><%= link_to "ESTUDANTES", pages_estudantes_path, class: 'nav-link'%> </li>
+                <li class="nav-item"><%= link_to "CONTACTO", pages_contacto_path, class: 'nav-link'%> </li>
+              </ul>
+            </div>
           </div>
+        </nav>
 
-          <div class="flex-col size2">
-            <span class="txt1 p-b-20">
-              Endereço
-            </span>
 
-            <span class="txt2">
-              Rua Dr. Mário Sacramento nº 53 AP 302  3810-104 Aveiro, Portugal
-            </span>
+
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="container animated fadeIn">
+
+  <div class="row">
+    <h1 class="header-title"> Contact </h1>
+    <hr>
+    <div class="col-sm-12" id="parent">
+      <div class="col-sm-6">
+      <iframe width="100%" height="320px;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaY32Qm3KWTkRuOnKfoIVZws&key=AIzaSyAf64FepFyUGZd3WFWhZzisswVx2K37RFY" allowfullscreen></iframe>
+      </div>
+
+      <div class="col-sm-6">
+        <form action="form.php" class="contact-form" method="post">
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="" autofocus="">
+            </div>
+
+
+            <div class="form-group form_left">
+              <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
+            </div>
+
+          <div class="form-group">
+               <input type="text" class="form-control" id="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" placeholder="Mobile No." required="">
           </div>
-        </div>
-
-        <div class="dis-flex size1 p-b-47">
-          <div class="txt1 p-r-25">
-            <span class="lnr lnr-phone-handset"></span>
+          <div class="form-group">
+          <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message/Feedback here..." required=""></textarea>
+          <br>
+            <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span> Send </button>
           </div>
-
-          <div class="flex-col size2">
-            <span class="txt1 p-b-20">
-              Contacto
-            </span>
-
-            <span class="txt3">
-              +351 932281760
-            </span>
-          </div>
-        </div>
-
-        <div class="dis-flex size1 p-b-47">
-          <div class="txt1 p-r-25">
-            <span class="lnr lnr-envelope"></span>
-          </div>
-
-          <div class="flex-col size2">
-            <span class="txt1 p-b-20">
-              Suporte Geral
-            </span>
-
-            <span class="txt3">
-              amoavemoz@gmail.com
-            </span>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
-  </dsiv>
+  </div>
+
+  <div class="container second-portion">
+  <div class="row">
+        <!-- Boxes de Acoes -->
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">
+        <div class="icon">
+          <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+          <div class="info">
+            <h3 class="title">MAIL & WEBSITE</h3>
+            <p>
+              <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp gondhiyahardik6610@gmail.com
+              <br>
+              <br>
+              <i class="fa fa-globe" aria-hidden="true"></i> &nbsp www.hardikgondhiya.com
+            </p>
+
+          </div>
+        </div>
+        <div class="space"></div>
+      </div>
+    </div>
+
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">
+        <div class="icon">
+          <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+          <div class="info">
+            <h3 class="title">CONTACT</h3>
+              <p>
+              <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+91)-9624XXXXX
+              <br>
+              <br>
+              <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp  (+91)-756706XXXX
+            </p>
+          </div>
+        </div>
+        <div class="space"></div>
+      </div>
+    </div>
+
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">
+        <div class="icon">
+          <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="info">
+            <h3 class="title">ADDRESS</h3>
+              <p>
+               <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp 15/3 Junction Plot
+               "Shree Krishna Krupa", Rajkot - 360001.
+            </p>
+          </div>
+        </div>
+        <div class="space"></div>
+      </div>
+    </div>
+    <!-- /Boxes de Acoes -->
+
+    <!--My Portfolio  dont Copy this -->
+
+  </div>
+</div>
+
+</div>
