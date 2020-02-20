@@ -1,5 +1,5 @@
 meta_product_name: "AMOAVE - Associação dos Moçambicanos em Aveiro"
-meta_title: "Product name - Product tagline"
+meta_title: "AMOAVE - Associação dos Moçambicanos em Aveiro"
 meta_description: "A AMOAVE pauta pelo espírito de integração e de inter-ajuda de todos moçambicanos residentes em aveiro"
-meta_image: "capa.jpg" # should exist in `app/assets/images/`
+meta_image: "amoave2.jpg" # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account"   # required for Twitter Cards
