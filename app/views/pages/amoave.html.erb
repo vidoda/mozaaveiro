@@ -28,34 +28,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="pages/home">
-
-          <%= link_to image_tag("logo.png", width: "40%", alt: "logo"),
-          '/' %>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-          </button>
 
 
-
-            <div class="collapse navbar-collapse" id="ftco-nav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><%= link_to "HOME", root_path, class: 'nav-link'%> </li>
-                <li class="nav-item"><%= link_to "AMOAVE", pages_amoave_path, class: 'nav-link'%> </li>
-                <!-- <li class="nav-item" <%= link_to pages_amoave_path%> ><a href="pages/amoave" class="nav-link">AMOAVE</a></li> -->
-                <li class="nav-item"><a href="comunidade.html" class="nav-link">COMUNIDADE</a></li>
-                <li class="nav-item"><a href="estudantes.html" class="nav-link">ESTUDANTES</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-link">CONTACTO</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    <!-- END nav -->
-
-  <!--   <section class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5">
+<!--   <section class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
@@ -66,173 +41,147 @@
         </div>
       </div>
     </section> -->
-
-    <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-6 d-flex">
-            <div class="img d-flex align-self-stretch align-items-center" style="background-image: url(<%= asset_path 'direcao.jpg' %>);">
-            </div>
-
+<div class="containe">
+  <div>
+    <h2 class="aboutus-title text-white">Sobre Nós</h2>
+  </div>
+  <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb">
+    <div class="containe">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 d-flex">
+          <div class="img d-flex align-self-stretch align-items-center" style="background-image: url(<%= asset_path 'direcao.jpg' %>);">
           </div>
-
-
-
-          <div class="col-md-6 col-lg-7 pl-lg-5 py-5">
-            <div class="py-md-5">
-              <div class="row justify-content-start pb-3">
-                <div class="col-md-12 heading-section ftco-animate">
-                  <!-- <span class="subheading">Poucas Palávras sobre nós</span> -->
-                  <h2 class="mb-4">NÓS SOMOS AMOAVE <i class="fas fa-heart" style="color:#BC1421"></i> </h2>
-                  <p class="text-justify">A AMOAVE - Associação dos Moçambicanos em Aveiro que se constitui como uma organização laica, de carácter humanitário sem fins
+        </div>
+        <div class="col-md-6 col-lg-7 pl-lg-5 py-5">
+          <div class="py-md-5">
+            <div class="row justify-content-start pb-3">
+              <div class="col-md-12 heading-section ftco-animate">
+                <!-- <span class="subheading">Poucas Palávras sobre nós</span> -->
+                <h3 class="mb-4">NÓS SOMOS AMOAVE <i class="fas fa-heart" style="color:#BC1421"></i> </h3>
+                <p class="text-justify">A AMOAVE - Associação dos Moçambicanos em Aveiro que se constitui como uma organização laica, de carácter humanitário sem fins
 lucrativos e de ajuda mútua, reflecte a convergência de esforços que os moçambicanos residentes
 em Aveiro, realizam ou possam vir a realizar para facilitar o conhecimento e o relacionamento
 entre todos os membros.</p>
-                  <p class="text-justify">A associação está comprometida com as preocupações dos
-seus associados e que os seus esforços de independência e liberdade de pensamento, possam
-sustentar a procura permanente de soluções que contribuam, ainda que de forma simples, para a
+                <p class="text-justify">A associação está comprometida com as preocupações dos
+seus associados e procura permanente de soluções que contribuam para a
 edificação de uma comunidade verdadeiramente solidaria com os seus membros.
 Inspirada na visão sócio-cultural da solidariedade e orientada pela filosofia de cooperação entre
-Moçambicanos:</p>
-                </div>
+Moçambicanos.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm px-3">
-      <h3 class="text-primary">Ajuda & Suporte</h3>
-      <div>
-        <p class="text-justify" <%=link_to "Baixa aqui o estatuto" , "/estatuto_amoave.pdf"%>>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-      </div>
     </div>
+  </section>
 
-    <div class="col-sm px-5">
-      <h3 class="text-primary">Educação</h3>
-      <div>
-        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-      </div>
-    </div>
-
-    <div class="col-sm">
-      <h3 class="text-primary">Voluntariado</h3>
-      <div>
-        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-    <section class="ftco-mission">
-      <div class="container text-justify">
-        <div class="row">
-          <div class="col-md-4 px-4 py-md-5 ftco-animate">
-            <div class="py-md-4 pb-md-5">
-              <h3>Lorem ipsum dolor sit amet</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+    <div class="containe">
+      <div class="row">
+        <div class="col-sm px-3">
+          <h3 class="text-primary">Ajuda & Suporte</h3>
+          <div>
+          <p class="text-justify" <%=link_to "Baixa aqui o estatuto" , "/estatuto_amoave.pdf"%>>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
           </div>
-          <div class="col-md-4 px-4 py-md-5 ftco-animate">
-            <div class="py-md-4 pb-md-5">
-              <h3>Loren Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+        </div>
+
+        <div class="col-sm px-3">
+          <h3 class="text-primary">Educação</h3>
+          <div>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+          </div>
+        </div>
+
+        <div class="col-sm px-3">
+          <h3 class="text-primary">Voluntariado</h3>
+          <div>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="testimony-section">
-      <div class="container">
-        <div class="row ftco-animate justify-content-center text-justify">
-          <div class="col-md-6 d-flex">
-            <div class="testimony-img" style="background-image: url(images/testimony-img.png);"></div>
-          </div>
+  <section class="testimony-section">
+    <div class="containe">
+      <div class="row ftco-animate justify-content-center text-justify">
+        <div class="col-md-6 d-flex">
+          <div class="testimony-img" style="background-image: url(images/testimony-img.png);"></div>
+        </div>
           <div class="col-md-6 py-5">
-            <div class="heading-section heading-section-white pt-4 ftco-animate">
-              <h2 class="mb-0">Histórias de sucesso</h2>
+          <div class="heading-section heading-section-white pt-4 ftco-animate">
+            <h2 class="mb-0">Histórias de sucesso</h2>
+          </div>
+          <div class="carousel-testimony owl-carousel ftco-owl">
+            <div class="item">
+              <div class="testimony-wrap pb-4">
+                <div class="text">
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="d-flex">
+                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                  </div>
+                  <div class="pos ml-3">
+                    <p class="name">Joao manuel</p>
+                    <span class="position">Eng. Química</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap pb-4">
-                  <div class="text">
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="item">
+              <div class="testimony-wrap pb-4">
+                <div class="text">
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="d-flex">
+                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
                   </div>
-                  <div class="d-flex">
-                    <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                    </div>
-                    <div class="pos ml-3">
-                      <p class="name">Joao manuel</p>
-                      <span class="position">Eng. Química</span>
-                    </div>
+                  <div class="pos ml-3">
+                    <p class="name">Vicente</p>
+                    <span class="position">Businessman</span>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="testimony-wrap pb-4">
-                  <div class="text">
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap pb-4">
+                <div class="text">
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+                <div class="d-flex">
+                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
                   </div>
-                  <div class="d-flex">
-                    <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                    </div>
-                    <div class="pos ml-3">
-                      <p class="name">Vicente</p>
-                      <span class="position">Businessman</span>
-                    </div>
+                  <div class="pos ml-3">
+                    <p class="name">dauce</p>
+                    <span class="position">Businessman</span>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="testimony-wrap pb-4">
-                  <div class="text">
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap pb-4">
+                <div class="text">
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+                <div class="d-flex">
+                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
                   </div>
-                  <div class="d-flex">
-                    <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                    </div>
-                    <div class="pos ml-3">
-                      <p class="name">dauce</p>
-                      <span class="position">Businessman</span>
-                    </div>
+                  <div class="pos ml-3">
+                    <p class="name">Desconhecido</p>
+                    <span class="position">Estudante</span>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="testimony-wrap pb-4">
-                  <div class="text">
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                  </div>
-                  <div class="d-flex">
-                    <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                    </div>
-                    <div class="pos ml-3">
-                      <p class="name">Desconhecido</p>
-                      <span class="position">Estudante</span>
-                    </div>
-                  </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap pb-4">
+                <div class="text">
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap pb-4">
-                  <div class="text">
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <div class="d-flex">
+                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
                   </div>
-                  <div class="d-flex">
-                    <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                    </div>
-                    <div class="pos ml-3">
-                      <p class="name">Anonimato</p>
-                      <span class="position">Residente</span>
-                    </div>
+                  <div class="pos ml-3">
+                    <p class="name">Anonimato</p>
+                    <span class="position">Residente</span>
                   </div>
                 </div>
               </div>
@@ -240,86 +189,22 @@ Moçambicanos:</p>
           </div>
         </div>
       </div>
-    </section>
-
-
-
-
-
-<div class="row ">
-  <div class="col-sm-12 col-md-12 col-lg-12">
-    <div class="show-card">
-      <div class="content-background">
-        <div class="btn-back">
-        <%= link_to "BACK TO HOME", root_path, class: 'btn btn-outline-warning'%>
+    </div>
+  </section>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 back-button">
+        <div class="show-card">
+          <div class="content-background">
+            <div class="btn-back">
+            <%= link_to "BACK TO HOME", root_path, class: 'btn btn-outline-warning'%>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-
-
-
-
-<footer class="ftco-footer ftco-section bg-info text-info">
-  <div class="container">
-    <div class="row">
-      <div class="col-md">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">AMOAVE.</h2>
-          <p>Associação dos Moçambicanos em Aveiro</p>
-          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-            <li class="ftco-animate"><a href="https://twitter.com"><span class="fab fa-twitter"></span></a></li>
-            <li class="ftco-animate"><a href="https://www.facebook.com/Amoave-109354353990110/?modal=admin_todo_tour"><span class="fab fa-facebook-f"></span></a></li>
-            <li class="ftco-animate"><a href="https://www.instagram.com"><span class="fab fa-instagram"></span></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="ftco-footer-widget mb-4 ml-md-5">
-          <h2 class="ftco-heading-2">Informação</h2>
-          <ul class="list-unstyled">
-            <li><a href="#" class="py-2 d-block">Empregos</a></li>
-            <li><a href="#" class="py-2 d-block">Bolsas de Estudos</a></li>
-            <li><a href="#" class="py-2 d-block">Oportunidades de Estágios</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md">
-         <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">Links</h2>
-          <ul class="list-unstyled">
-             <li class="nav-item"><%= link_to "AMOAVE", pages_amoave_path, class: 'nav-link'%> </li>
-            <li><a href="/pages/estudantes.html" class="py-2 d-block">Estudantes</a></li>
-            <li><a href="/pages/comunidade.html" class="py-2 d-block">Comunidade</a></li>
-            <li><a href="/pages/contacto.htmls" class="py-2 d-block">Contactos</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">Alguma Questão?</h2>
-          <div class="block-23 mb-3">
-            <ul>
-              <li><span class="icon icon-map-marker"></span><span class="text">Aveiro, Portugal</span></li>
-              <li><a href="#"><span class="icon icon-phone"></span><span class="text">+351 932281760</span></a></li>
-              <li><a href="#"><span class="icon icon-envelope"></span><span class="text">amoave.direcao@yahoo.com</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-
-        <p>
-          Copyright ©2019 All rights reserved | AMOAVE <i class="fas fa-heart" style="color:#BC1421"></i>
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
 
 
   <!-- loader -->

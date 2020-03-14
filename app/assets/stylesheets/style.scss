@@ -2,7 +2,6 @@
 // @import "~bootstrap-4.0.0/scss/_functions.scss";
 // @import "~bootstrap-4.0.0/scss/_variables.scss";
 // @import "~bootstrap-4.0.0/scss/mixins/_breakpoints.scss";
-
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -8179,7 +8178,7 @@ body {
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
-    font-size: 15px;
+    font-size: 18px;
 }
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
@@ -8830,7 +8829,7 @@ body {
     color: rgba(255, 255, 255, 0.2); }
 
 .ftco-mission h3 {
-  font-weight: 900; }
+  font-weight: 500; }
 
 .container {
   max-width: 1180px; }
@@ -9138,7 +9137,7 @@ textarea.form-control {
   .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     font-size: 24px;
     font-weight: 900; }
   .ftco-footer .ftco-footer-widget ul li a {
@@ -9471,7 +9470,7 @@ textarea.form-control {
   width: 100%; }
   @media (max-width: 991.98px) {
     .ftco-counter .img {
-      height: 400px;
+      height: 244px;
       background-position: top center !important; } }
 
 .ftco-counter .heading-section h2 span {
@@ -10494,31 +10493,15 @@ color: #32681E;
 // padding-top: 100px;
 // margin-left: 100px;
 // }
-.form-regi {
+.form-regis {
   margin-left: 15%;
   margin-right: 15%;
 }
 
 
-
-
-
-
-// .ftco-footer {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   height: 500px;
-//   margin-top: 500px;
-// }
-
-
 .ftco-footer {
    position: relative;
    background: #ffd1b3;
-   // display: flex;
-   // align-items: center;
-   // justify-content: space-between;
    height: auto;
    padding: 0px 10px;
    color: rgba(0,0,0,0.3);
@@ -10527,6 +10510,55 @@ color: #32681E;
 
 
 .testimony-section {
-  margin-left: 7%;
+  margin-left:10%;
   margin-right: 7%;
 }
+
+
+
+
+
+// NEW USER FORM
+.formula {
+  margin-top: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.ftco-navbarr {
+  background-color: red !important;
+}
+
+
+.contacto {
+display: grid;
+}
+
+
+// WHO WE ARE PAGE
+
+  .containe {
+      display: flow-root;
+      margin-left: 5%;
+      margin-right: 5%;
+
+    }
+
+.aboutus-title {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 5%;
+  background-color: #0779EB;
+
+
+}
+
+.back-button {
+  display: inline-block;
+  position: relative;
+  margin-left: 7.5%;
+  padding-top: 1%;
+}
+// .containeer {
+//    margin-top: -150px;
+// }
