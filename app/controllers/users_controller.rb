@@ -14,10 +14,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
       if @user.save
-        flash[:notice] = 'Foi registado com sucesso na AMOAVE.'
-        redirect_to users_path
+
+        redirect_to root_path, message: "Foi registado com sucesso na AMOAVE."
       else
-        flash[:alert] = 'User was not saved.'
+        flash[:errors] = @user.errors.full_messages
         render :action => 'new'
       end
     end
