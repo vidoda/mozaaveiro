@@ -14,7 +14,7 @@
 
           <%= simple_form_for @user  do |f| %>
             <%= f.input :name, label: 'Nome completo'%>
-             <%= f.input :gender, label: "Género", collection: [:Femenino, :Masculino], include_blank: "Escolha o género"%>
+             <%= f.input :gender, label: "Género", collection: [:Feminino, :Masculino], include_blank: "Escolha o género"%>
 
 
             <%= f.input :naturality, label: "Naturalidade", collection: [:Cabo_Delgado, :Gaza, :Inhambane, :Manica,  :Maputo_província, :Maputo_cidade, :Nampula, :Niassa, :Sofala, :Tete, :Zambézia], include_blank: "Escolha a província"%>
@@ -34,7 +34,7 @@
             <%= f.input :occupation, label: 'Ocupação atual', collection: [:Estudante, :Trabalhador, :Trabalhador_Estudante, :Desempregado], include_blank: "Escolha a ocupação"%>
 
             <%= f.input :emergency, label: 'Contacto de emergência'%>
-            <%= f.input :comentary, label: 'Comentários em relação a AMOAVE' %>
+            <%= f.input :comentary, label: 'Comentários em relação à AMOAVE' %>
 
           <div class="row justify-content-center">
             <div class="form-actions col-xs-12 col-sm-4 col-sm-offset-4 my-5">
