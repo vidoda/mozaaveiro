@@ -31,7 +31,7 @@
                                           order: [:day, :month, :year], label: 'Data de nascimento' %>
 
 
-            <%= f.input :occupation, label: 'Ocupação atual'%>
+            <%= f.input :occupation, label: 'Ocupação atual', collection: [:Estudante, :Trabalhador, :Trabalhador_Estudante, :Desempregado], include_blank: "Escolha a ocupação"%>
 
             <%= f.input :emergency, label: 'Contacto de emergência'%>
             <%= f.input :comentary, label: 'Comentários em relação a AMOAVE' %>
