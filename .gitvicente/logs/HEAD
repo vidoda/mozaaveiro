@@ -1,6 +1,0 @@
-0000000000000000000000000000000000000000 d76a8970c9c9b73e65faa3ee86561f5cc5a9dc95 vicente dauce <dauce@ua.pt> 1584116047 +0000	clone: from https://git.heroku.com/amoave.git
-d76a8970c9c9b73e65faa3ee86561f5cc5a9dc95 cc5b6261341fbef198551d114685af0be7fdb2da vicente dauce <dauce@ua.pt> 1584118045 +0000	commit: arrange footer
-cc5b6261341fbef198551d114685af0be7fdb2da dd17232aa570f248d46180b098182ccd71eada14 vicente dauce <dauce@ua.pt> 1584142151 +0000	commit: render pages
-dd17232aa570f248d46180b098182ccd71eada14 72867d44b8a21bf473a8be33c1c8a4887646f863 vicente dauce <dauce@ua.pt> 1584189887 +0000	commit: form responsive
-72867d44b8a21bf473a8be33c1c8a4887646f863 72867d44b8a21bf473a8be33c1c8a4887646f863 vicente dauce <dauce@ua.pt> 1584190060 +0000	checkout: moving from master to register-form
-72867d44b8a21bf473a8be33c1c8a4887646f863 72867d44b8a21bf473a8be33c1c8a4887646f863 vicente dauce <dauce@ua.pt> 1584190171 +0000	checkout: moving from register-form to master
