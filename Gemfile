@@ -9,6 +9,7 @@ gem 'rubyzip', '= 1.0.0'
 gem 'axlsx', '= 2.0.1'
 gem 'axlsx_rails'
 gem 'country_select'
+gem 'meta-tags'
 
 gem 'bootstrap', '~> 4.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

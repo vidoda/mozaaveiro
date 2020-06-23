@@ -7,7 +7,9 @@ class PagesController < ApplicationController
   end
 
   def comunidade
-
+    @page_title = 'Index'
+    @page_description = 'Portfolio Home page.'
+    @page_keywords = 'Home, Index, Caleb Harnell, Portfolio'
   end
 
   def estudantes
@@ -25,9 +27,12 @@ class PagesController < ApplicationController
 
 
 
-
-
-  def show
-    set_meta_tags title: @post.title
+  def index
+  @page_title = 'Index'
+  @page_description = 'Portfolio Home page.'
+  @page_keywords = 'Home, Index, Caleb Harnell, Portfolio'
   end
+
 end
+
+
