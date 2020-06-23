@@ -33,6 +33,12 @@ class PagesController < ApplicationController
   @page_keywords = 'Home, Index, Caleb Harnell, Portfolio'
   end
 
+  def view
+  @page_title = 'Index'
+  @page_description = 'Portfolio Home page.'
+  @page_keywords = 'Home, Index, Caleb Harnell, Portfolio'
+  end
+
 end
 
 
