@@ -12,4 +12,14 @@ module MetaTagsHelper
     # little twist to make it work equally with an asset or a url
     meta_image.starts_with?("http") ? meta_image : image_url(meta_image)
   end
+
+
+
+
+
+  def yield_meta_tag(tag, default_text='')
+     content_for?(:"meta_#{tag}") ? content_for(:"meta_#{tag}") : default_text
+   end
 end
+
+

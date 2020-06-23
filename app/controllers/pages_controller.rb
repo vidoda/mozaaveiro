@@ -7,6 +7,7 @@ class PagesController < ApplicationController
   end
 
   def comunidade
+
   end
 
   def estudantes
@@ -19,5 +20,14 @@ class PagesController < ApplicationController
   end
 
   def outro
+  end
+
+
+
+
+
+
+  def show
+    set_meta_tags title: @post.title
   end
 end

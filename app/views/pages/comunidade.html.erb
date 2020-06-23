@@ -1,5 +1,23 @@
+  
+
+
   <head>
      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    
+     <!-- Meta information for the <head> section -->
+    <% content_for :head do %>
+      <meta property="fb:app_id" content="myid" /> 
+      <meta property="og:type"   content="sdff:post" /> 
+      <meta property="og:url"    content="<%= "http://sdff.herokuapp.com"%>" /> 
+      <meta property="og:title"  content="Sample" /> 
+      <meta property="og:image"  content="https://fbstatic-a.akamaihd.net/images/devsite/attachment_blank.png" /> 
+    <% end %>
+
+
+
+
+    
   </head>
 
 <div class="update-page" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqGsUZdJ0gjZUUHEMdyefjb6FOgDMfS3j3xc1dghPTanxhNz7H);">
