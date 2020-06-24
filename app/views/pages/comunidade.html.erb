@@ -1,6 +1,17 @@
   
 <head>
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+  <%= display_meta_tags site: 'AMOAVE AMOAVE' %>
+
+  <title>AMOAVE - Associação dos Moçambicanos em Aveiro</title>
+
+
+<% content_for :meta_title, "#{@page.name} is on #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @page.description %>
+<% content_for :meta_image, cl_image_path(@page.photo.path) %>
+
+
 </head>
 
 <div class="update-page" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqGsUZdJ0gjZUUHEMdyefjb6FOgDMfS3j3xc1dghPTanxhNz7H);">

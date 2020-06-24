@@ -5,12 +5,6 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-<!-- meus rascunhos -->
-
-    <%= display_meta_tags site: 'AMOAVE AMOAVE' %> 
-
-    <!-- meus rascunhos -->
-
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -19,13 +13,15 @@
     <meta name="viewport" content="width=1000">
 
 
-
     <title>
       <%= if content_for?(:title) then yield(:title) + ' | ' end %>
       AMOAVE VICENTE
     </title>
 
-  <!--   <title><%= meta_title %></title> -->
+
+
+
+
     <title><%= meta_title %></title>
     <meta name="description" content="<%= meta_description %>">
 
