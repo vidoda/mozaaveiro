@@ -38,3 +38,5 @@ MetaTags.configure do |config|
   #   'x-hearthstone:deck',
   # )
 end
+
+

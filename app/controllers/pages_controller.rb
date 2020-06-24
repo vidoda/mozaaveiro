@@ -7,9 +7,9 @@ class PagesController < ApplicationController
   end
 
   def comunidade
-    @page_title = 'Index'
-    @page_description = 'Portfolio Home page.'
-    @page_keywords = 'Home, Index, Caleb Harnell, Portfolio'
+    # @page_title = 'Index'
+    # @page_description = 'Portfolio Home page.'
+    # @page_keywords = 'Home, Index, Caleb Harnell, Portfolio'
   end
 
   def estudantes
@@ -26,18 +26,17 @@ class PagesController < ApplicationController
 
 
 
+  # def index
+  # @page_title = 'Index'
+  # @page_description = 'Portfolio Home page.'
+  # @page_keywords = 'Home, Index, Caleb Harnell, Portfolio'
+  # end
 
-  def index
-  @page_title = 'Index'
-  @page_description = 'Portfolio Home page.'
-  @page_keywords = 'Home, Index, Caleb Harnell, Portfolio'
-  end
-
-  def view
-  @page_title = 'Index'
-  @page_description = 'Portfolio Home page.'
-  @page_keywords = 'Home, Index, Caleb Harnell, Portfolio'
-  end
+  # def view
+  # @page_title = 'Index'
+  # @page_description = 'Portfolio Home page.'
+  # @page_keywords = 'Home, Index, Caleb Harnell, Portfolio'
+  # end
 
 end
 
