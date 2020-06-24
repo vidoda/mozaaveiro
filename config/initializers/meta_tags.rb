@@ -1,17 +1,23 @@
 # frozen_string_literal: true
 
+rails generate meta_tags:install
+
+
 # Use this setup block to configure all options available in MetaTags.
-MetaTags.configure do |config|
+
+
+
+# MetaTags.configure do |config|
   # How many characters should the title meta tag have at most. Default is 70.
   # Set to nil or 0 to remove limits.
-  config.title_limit = 70
+  # config.title_limit = 70
 
   # When true, site title will be truncated instead of title. Default is false.
-  config.truncate_site_title_first = false
+  # config.truncate_site_title_first = false
 
   # Maximum length of the page description. Default is 300.
   # Set to nil or 0 to remove limits.
-  config.description_limit = 300
+  # config.description_limit = 300
 
   # Maximum length of the keywords meta tag. Default is 255.
   # config.keywords_limit = 255
@@ -30,13 +36,13 @@ MetaTags.configure do |config|
 
   # When false, generated meta tags will be self-closing (<meta ... />) instead
   # of open (`<meta ...>`). Default is true.
-  config.open_meta_tags = true
+  # config.open_meta_tags = true
 
   # List of additional meta tags that should use "property" attribute instead
   # of "name" attribute in <meta> tags.
   # config.property_tags.push(
   #   'x-hearthstone:deck',
   # )
-end
+# end
 
 

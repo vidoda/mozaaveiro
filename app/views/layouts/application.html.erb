@@ -19,14 +19,16 @@
     <meta name="viewport" content="width=1000">
 
 
+    <% if content_for?(:head) %>
+      <%= yield(:head) %>
+    <% end %>
 
-    <title>
-      <%= if content_for?(:title) then yield(:title) + ' | ' end %>
-      AMOAVE VICENTE
-    </title>
 
-  <!--   <title><%= meta_title %></title> -->
-    <title><%= meta_title %></title>
+  
+    <%= display_meta_tags site: 'My website' %>
+
+
+    <!-- <title><%= meta_title %></title> -->
     <meta name="description" content="<%= meta_description %>">
 
     <!-- Facebook Open Graph data -->
